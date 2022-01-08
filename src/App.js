@@ -29,10 +29,6 @@ export default function App() {
       .then((data) => setCharacters(data.data.results));
   }, []);
 
-  React.useEffect(() => {
-    forceCheck();
-  });
-
   return (
     <div className="App">
       <h1>My Hero's</h1>
